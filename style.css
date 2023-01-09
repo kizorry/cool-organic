@@ -1,6 +1,7 @@
 :root {
     --brand: #91ad41;
     --line: #bebebe;
+    --search: #ff8a6c;
 }
 *{
     padding: 0;
@@ -69,4 +70,125 @@
 }
 .hook:hover .sub-menu{
     display: block;
+}
+/* css search */
+.search{
+    position: relative;
+}
+
+.search:hover .search-box{
+    display: block;
+}
+.search-box{
+    display: none;
+    position: absolute;
+    right: -10px;
+    padding-top: 10px;
+}
+.search-form{
+     position: relative;
+}
+.search-form input{
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-image: -webkit-linear-gradient(35deg, var(--brand) 0%, var(--search) 100%);
+    border: none;
+    color: white;
+    outline: 0;
+   
+}
+.search-form input::placeholder{
+    color: white;
+}
+.search-form button{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.search-form button i{
+    font-size: 16px;
+    color: white;
+}
+/* user */
+.user{
+    position: relative;
+}
+.user:hover .login-box{
+    display: block;
+}
+.login-box{
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    padding-top: 10px;
+}
+.login-box form{
+    padding: 10px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.login-box button{
+    padding:  8px 40px;
+    border-radius: 24px;
+    outline: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-login{
+    color: white;
+    background-image: -webkit-linear-gradient(35deg, var(--brand) 0%, var(--search) 100%);
+    border: 1px solid white;
+}
+.btn-login:hover{
+    background-image: unset;
+    background-color: var(--brand);
+}
+
+.btn-register{
+    border: 1px solid var(--line);
+}
+.btn-register:hover{
+    background-color: var(--brand);
+    color: white;
+}
+/* cart */
+.cart{
+    position: relative;
+}
+.cart:hover .cart-box{
+    display: block;
+}
+.quantity{
+    position: absolute;
+    top: -25px;
+    right: -15px;
+}
+.quantity span{
+    display: block;
+    background-image: -webkit-linear-gradient(35deg, var(--brand) 0%, var(--search) 100%);
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+}
+.cart-box{
+    position: absolute;
+    padding: 10px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: 0 3px 7px var(--brand);
+    width: 200px;
+    right: 0;
+    margin-top: 10px;
+    display: none;
 }
