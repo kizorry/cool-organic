@@ -2,6 +2,11 @@
     --brand: #91ad41;
     --line: #bebebe;
     --search: #ff8a6c;
+    /* color commit */
+    --commit-1: #59CCA6;
+    --commit-2: #91AD41;
+    --commit-3: #E3B375;
+    --commit-4: #EF7F94;
 }
 *{
     padding: 0;
@@ -192,3 +197,83 @@
     margin-top: 10px;
     display: none;
 }
+
+/* header commit */
+.bg-color-1{
+    background-color: var(--commit-1);
+}
+.bg-color-2{
+    background-color: var(--commit-2);
+}
+.bg-color-3{
+    background-color: var(--commit-3);
+}
+.bg-color-4{
+    background-color: var(--commit-4);
+}
+.bg-img-1{
+    background-image: url('./images/col_1.png');
+}
+.bg-img-2{
+    background-image: url('./images/col_2.png');
+}
+.bg-img-3{
+    background-image: url('./images/col_3.png');
+}
+.bg-img-4{
+    background-image: url('./images/col_4.png');
+}
+
+.content-bg{
+    position: inherit;
+    padding: 20px 50px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+.commit-block{
+    display: flex;
+    flex-direction: row;
+}
+.commit-block a{
+    text-decoration: none;
+    color: white;
+}
+.commit-content{
+    color: white;
+    position: relative;
+}
+.commit-content:hover::before {
+   opacity: 0.5;
+}
+.commit-content::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.commit-content .commit-title{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.commit-content .commit-description{
+    margin-bottom: 20px;
+}
+.commit-content .commit-title a:hover{
+    color: var(--brand);
+} 
+.commit-btn{
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: black;
+    border-radius: 8px;
+}
+.commit-btn:hover{
+    background-color: var(--brand);
+}
+/* end header commit */
