@@ -2,6 +2,7 @@
     --brand: #91ad41;
     --line: #bebebe;
     --search: #ff8a6c;
+    --colorText: #8b8b99;
     /* color commit */
     --commit-1: #59CCA6;
     --commit-2: #91AD41;
@@ -277,3 +278,52 @@
     background-color: var(--brand);
 }
 /* end header commit */
+/* css home about */
+.home-about {
+    margin: 60px 80px;
+    text-align: center;
+}
+.home-about .heading .title {
+    position: relative;
+    display: inline-block;
+    font-size: 34px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.home-about .heading .title::before {
+    content: "";
+    position: absolute;
+    background-image: url('/images/bg_title.png');
+    width: 100%;
+    height: 30px;
+    background-repeat: no-repeat;
+    bottom: -40px;
+    background-position: center;
+}
+.home-about .heading .subtitle {
+    color: var(--colorText);
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 30px;
+}
+.home-about .content {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+}
+.home-about .content .block .block__thumnail img {
+    width: 135px;
+    max-width: 100%;
+}
+.home-about .content .block .block__title {
+    font-size: 20px;
+    padding: 15px 0;
+}
+.home-about .content .block .block__content {
+    color: var(--colorText);
+    padding: 0 10px;
+} 
+/* end css home about */
